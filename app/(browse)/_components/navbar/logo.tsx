@@ -24,3 +24,5 @@ export const Logo = () => {
         </Link>
     );
 };
+
+/* 2.43 */
