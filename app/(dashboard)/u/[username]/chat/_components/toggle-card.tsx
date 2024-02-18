@@ -14,7 +14,7 @@ interface ToggleCardProps {
     field: FieldTypes;
 }
 
-const ToggleCard = ({ value = false, label, field }: ToggleCardProps) => {
+export const ToggleCard = ({ value = false, label, field }: ToggleCardProps) => {
     const [isPending, startTransition] = useTransition();
 
     const onChange = () => {
@@ -38,8 +38,6 @@ const ToggleCard = ({ value = false, label, field }: ToggleCardProps) => {
         </div>
     );
 };
-
-export default ToggleCard;
 
 export const ToggleCardSkeleton = () => {
     return <Skeleton className="rounded-xl p-10 w-full" />;
